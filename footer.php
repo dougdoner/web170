@@ -1,6 +1,6 @@
   <div class="footer-wrap">
     <footer id="footer-main">
-      <p class=" footer-left">Copyright &#169; 2014 Seattle Central WISE</p>
+      <p class=" footer-left">Copyright &#169; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
       <p class="footer-right">Web design by <a href="http://designbydoug.com">Douglas Doner</a></p>
     </footer>
   </div><!-- end footer -->
