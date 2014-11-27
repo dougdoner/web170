@@ -5,6 +5,114 @@ Description: Wise Seattle Central WordPress theme
 Version: 0.1
 */
 /* CSS document */
+.columns-1 {
+  width: 6.38297872%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-1 {
+    width: 100%;
+  }
+}
+.columns-2 {
+  width: 14.89361702%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-2 {
+    width: 100%;
+  }
+}
+.columns-3 {
+  width: 23.40425532%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-3 {
+    width: 100%;
+  }
+}
+.columns-4 {
+  width: 31.91489362%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-4 {
+    width: 100%;
+  }
+}
+.columns-5 {
+  width: 40.42553191%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-5 {
+    width: 100%;
+  }
+}
+.columns-6 {
+  width: 48.93617021%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-6 {
+    width: 100%;
+  }
+}
+.columns-7 {
+  width: 57.44680851%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-7 {
+    width: 100%;
+  }
+}
+.columns-8 {
+  width: 65.95744681%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-8 {
+    width: 100%;
+  }
+}
+.columns-9 {
+  width: 74.46808511%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-9 {
+    width: 100%;
+  }
+}
+.columns-10 {
+  width: 82.9787234%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-10 {
+    width: 100%;
+  }
+}
+.columns-11 {
+  width: 91.4893617%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-11 {
+    width: 100%;
+  }
+}
+.columns-12 {
+  width: 100%;
+  padding-right: 0%;
+}
+@media all and (max-width: 480px) {
+  .columns-12 {
+    width: 100%;
+  }
+}
 /************** Browser resets ***********/
 body,
 body * {
@@ -18,7 +126,7 @@ a img {
 body {
   font-family: sans-serif;
   font-size: 100%;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 img {
   height: auto;
@@ -92,8 +200,14 @@ nav#main-nav ul li a:focus {
   /** sub nav styling **/
   /** #main styling **/
 }
+.middle-wrap #middle aside .widget {
+  margin-bottom: 10px;
+}
 .middle-wrap #middle aside ul {
   margin-bottom: 10px;
+}
+.middle-wrap #middle aside ul li {
+  margin-bottom: 5px;
 }
 .middle-wrap #middle aside#sub-nav {
   margin-bottom: 5px;
@@ -144,6 +258,22 @@ nav#main-nav ul li a:focus {
 }
 .middle-wrap #middle #main aside#categories ul li {
   list-style-type: none;
+}
+/********* post styles *********/
+.post img {
+  padding: 5px 2px 5px 0;
+}
+/******** comments styles *********/
+textarea#comment {
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+input#submit {
+  font-family: inherit;
+  border: 1px dotted grey;
+  background: none;
 }
 /********* gallery styles ********/
 #gallery-content {
@@ -202,6 +332,10 @@ h6 {
 #header-main h6 {
   margin-bottom: 0;
 }
+h2.fourohfour {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
 h1 span {
   display: none;
 }
@@ -256,6 +390,12 @@ hr {
   color: #7d7774;
   background: #7d7774;
 }
+.pagination p.previous-posts {
+  float: left;
+}
+.pagination p.next-posts {
+  float: right;
+}
 /*************** media query styles **********************/
 /*********** tablet *************/
 @media all and (min-width: 39em) {
@@ -273,39 +413,17 @@ hr {
   }
   #middle aside#sub-nav {
     float: left;
-    width: 23.40425532%;
-    padding-right: 0%;
   }
   #middle #main {
-    width: 74.46808511%;
-    padding-right: 0%;
     float: right;
     /* #content styling */
     /* aside styling */
   }
   #middle #main #content {
-    width: 65.95744681%;
-    padding-right: 0%;
     float: left;
   }
   #middle #main aside#categories {
     float: right;
-    width: 31.91489362%;
-    padding-right: 0%;
-  }
-  /********* gallery styles ********/
-  #gallery-content img {
-    width: 31.91489362%;
-    padding-right: 1%;
-    float: left;
-    margin: 0 0 10px 0;
-  }
-  /********* calendar styles ********/
-  #gallery-content img {
-    width: 31.91489362%;
-    padding-right: 1%;
-    float: left;
-    margin: 0 0 10px 0;
   }
   /******** footer styling ******/
   .footer-left {

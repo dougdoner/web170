@@ -1,0 +1,15 @@
+<aside id="sub-nav" class="columns-3">
+<?php if (is_active_sidebar('Primary')) :
+  dynamic_sidebar('Primary');
+else : ?>
+  <h3>Recent posts</h3>
+  <ul>
+  <?php $recent_post = wp_get_recent_posts( array('numberposts' => 5) );
+      foreach ($recent_post as $rec) {
+        echo '<li><a href="' . get_permalink($rec["ID"]) . '">' . $rec["post_title"]. '</a> </li> ';
+      }
+  ?>
+  </ul>
+ 
+<?php endif; ?>
+</aside>

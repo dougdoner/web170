@@ -5,15 +5,9 @@ Description: Wise Seattle Central WordPress theme
 Version: 0.1
 */
 
-// functions
-.columns(@columns, @paddingRight:2) {
-  // last number can be changed depending on the size of your grid, if you are using one. Second number in equation is to account for gutters
-  width: percentage((-20 + ((60 * @columns) + (20 * @columns))) / 940);
-  // used padding-right instead of margin-right to utilize box-border
-  padding-right: percentage(@paddingRight / 100);
-}
-
 /* CSS document */
+
+@import "column";
 
 /************** Browser resets ***********/
 
@@ -31,7 +25,7 @@ a img {
 body {
   font-family: sans-serif;
   font-size: 100%;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 img {
@@ -108,8 +102,14 @@ nav#main-nav {
     overflow: hidden;
     
     aside {
+      .widget {
+        margin-bottom: 10px;
+      }
       ul {
         margin-bottom: 10px;
+        li {
+          margin-bottom: 5px;
+        }
       }
     }
     
@@ -173,6 +173,27 @@ nav#main-nav {
   }
 }
 
+/********* post styles *********/
+
+.post img {
+  padding: 5px 2px 5px 0;
+}
+
+/******** comments styles *********/
+
+textarea#comment {
+  display: block;
+  width: 100%;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+input#submit {
+  font-family: inherit;
+  border: 1px dotted grey;
+  background: none;
+}
+
 /********* gallery styles ********/
   
   #gallery-content {
@@ -224,6 +245,11 @@ h1, h2, h3, h4, h5, h6 {
   #header-main & {
     margin-bottom: 0;
   }
+}
+
+h2.fourohfour {
+  font-size: 2.2em;
+  margin-bottom: 10px;
 }
 
 h1 span {
@@ -289,6 +315,15 @@ hr {
   background: #7d7774;
 }
 
+.pagination {
+  p.previous-posts {
+    float: left;
+  }
+  p.next-posts {
+    float: right;
+  }
+  }
+
 /*************** media query styles **********************/
 /*********** tablet *************/
 
@@ -309,46 +344,22 @@ hr {
     /** sub nav styling **/
     aside#sub-nav {
       float: left;
-      .columns(3, 0);
     }
     
     /** #main styling **/
     #main {
-      .columns(9, 0);
       float: right;
       /* #content styling */
       #content {
-        .columns(8, 0);
         float: left;
       }
       
       /* aside styling */
       aside#categories {
         float: right;
-        .columns(4,0);
       }
     }
     
-  }
-  
-  /********* gallery styles ********/
-  
-  #gallery-content {
-    img {
-      .columns(4, 1);
-      float: left;
-      margin: 0 0 10px 0;
-    }
-  }
-  
-  /********* calendar styles ********/
-  
-  #gallery-content {
-    img {
-      .columns(4, 1);
-      float: left;
-      margin: 0 0 10px 0;
-    }
   }
   
   /******** footer styling ******/
