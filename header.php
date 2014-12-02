@@ -6,7 +6,8 @@
   <meta name="robots" content="noindex, nofollow" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico">
+  <!-- need to fix the favicon so people can see it -->
+  <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
   <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>

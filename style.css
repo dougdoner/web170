@@ -398,7 +398,7 @@ hr {
 }
 /*************** media query styles **********************/
 /*********** tablet *************/
-@media all and (min-width: 39em) {
+@media all and (min-width: 480px) {
   /********* header styles ***********/
   #header-main {
     max-width: 940px;
@@ -432,9 +432,10 @@ hr {
   .footer-right {
     float: right;
   }
-}
-@media all and (min-width: 50em) {
   /********** nav styles *********/
+}
+/*** desktop **/
+@media all and (min-width: 800px) {
   nav#main-nav {
     float: right;
     clear: none;
@@ -455,14 +456,6 @@ hr {
   }
   nav#main-nav ul li a {
     display: block;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-}
-/*** desktop **/
-@media all and (min-width: 58.75em) {
-  /********** nav styles *********/
-  nav#main-nav ul li a {
     padding-right: 15px;
     padding-left: 15px;
   }

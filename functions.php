@@ -14,19 +14,19 @@ function register_the_sidebars() {
     array(
     'id' => 'primary',
     'name' => __( 'Primary' ),
-    'description' => __( 'Primary widgetized area.' ),
+    'description' => __( 'Sidebar for left side of website.' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
     'after_title' => '</h3>'
     )
   );
-  /* Register the 'secondary' sidebar. */
+  /* Register the 'content' sidebar. */
   register_sidebar(
     array(
     'id' => 'content',
     'name' => __( 'Content' ),
-    'description' => __( 'Content widgetized sidebar area.' ),
+    'description' => __( 'Sidebar for right side of webwsite.' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
     'before_title' => '<h3 class="widget-title">',
