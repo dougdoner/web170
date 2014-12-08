@@ -5,7 +5,7 @@ function navToggle(e) {
 };
 
 function imgBorderStopper() {
-  var imgParent = $("img").parent("a");
+  var imgParent = $("img").closest("a");
   imgParent.addClass("image-inside");
 }
 
