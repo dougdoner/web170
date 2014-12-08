@@ -197,22 +197,22 @@ nav#main-nav ul li a:focus {
   max-width: 940px;
   margin: 0 auto;
   overflow: hidden;
-  /** #main styling **/
 }
-.middle-wrap #middle #main {
+/** #main styling **/
+#main {
   /* #content styling */
 }
-.middle-wrap #middle #main #content .post {
+#main #content .post {
   margin-bottom: 20px;
   border-bottom: 2px dashed #7d7774;
   color: #635e5b;
 }
-.middle-wrap #middle #main #content .post .post-meta {
+#main #content .post .post-meta {
   font-size: .8em;
   clear: both;
   overflow: hidden;
 }
-.middle-wrap #middle #main #content .post .post-meta p {
+#main #content .post .post-meta p {
   float: left;
   margin-right: 5px;
 }
@@ -316,6 +316,10 @@ a:hover,
 a:focus {
   color: #f5a561;
   border-bottom: 1px solid #f5a561;
+}
+a:hover img,
+a:focus img {
+  border: none;
 }
 h1,
 h2,

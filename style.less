@@ -100,30 +100,29 @@ nav#main-nav {
     max-width: 940px;
     margin: 0 auto;
     overflow: hidden;
-    
-    /** #main styling **/
-    #main {
-      /* #content styling */
-      #content {
-        .post {
-          margin-bottom: 20px;
-          border-bottom: 2px dashed #7d7774;
-          color: darken(#7d7774, 10%);
-          .post-meta {
-            font-size: .8em;
-            clear: both;
-            overflow: hidden;
-            p {
-              float: left;
-              margin-right: 5px;
-            }
+  }
+}
+
+/** #main styling **/
+  #main {
+    /* #content styling */
+    #content {
+      .post {
+        margin-bottom: 20px;
+        border-bottom: 2px dashed #7d7774;
+        color: darken(#7d7774, 10%);
+        .post-meta {
+          font-size: .8em;
+          clear: both;
+          overflow: hidden;
+          p {
+            float: left;
+            margin-right: 5px;
           }
         }
       }
     }
-    
   }
-}
 
 /**** aside styles *****/
 
@@ -240,6 +239,9 @@ a:link, a:visited {
 a:hover, a:focus {
   color: #f5a561;
   border-bottom: 1px solid #f5a561;
+  & img {
+    border: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
