@@ -239,9 +239,11 @@ a:link, a:visited {
 a:hover, a:focus {
   color: #f5a561;
   border-bottom: 1px solid #f5a561;
-  & img {
-    border: none;
-  }
+}
+
+/* for links containing images */
+.image-inside:hover, .image-inside:focus {
+  border-bottom: 0 none;
 }
 
 h1, h2, h3, h4, h5, h6 {

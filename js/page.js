@@ -1,9 +1,15 @@
-$(document).ready(function() {
-  $(".mobile-nav").on("click", navToggle);
-});
-  
 function navToggle(e) {
-  navLink = $(this).attr("href");
+  var navLink = $(this).attr("href");
   $(navLink).slideToggle();
   e.preventDefault();
 };
+
+function imgBorderStopper() {
+  var imgParent = $("img").parent("a");
+  imgParent.addClass("image-inside");
+}
+
+$(document).ready(function() {
+  $(".mobile-nav").on("click", navToggle);
+  imgBorderStopper();
+});
