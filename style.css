@@ -124,7 +124,7 @@ a img {
 }
 /********** Global styles ***********/
 body {
-  font-family: sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 100%;
   line-height: 1.5;
 }
@@ -184,7 +184,7 @@ nav#main-nav ul li a {
 nav#main-nav ul li a:hover,
 nav#main-nav ul li a:focus {
   color: #f2913d;
-  text-decoration: none;
+  border-bottom: none;
   background: #fce4cf;
 }
 /**************** middle content styling ********/
@@ -197,31 +197,15 @@ nav#main-nav ul li a:focus {
   max-width: 940px;
   margin: 0 auto;
   overflow: hidden;
-  /** sub nav styling **/
   /** #main styling **/
-}
-.middle-wrap #middle aside .widget {
-  margin-bottom: 10px;
-}
-.middle-wrap #middle aside ul {
-  margin-bottom: 10px;
-}
-.middle-wrap #middle aside ul li {
-  margin-bottom: 5px;
-}
-.middle-wrap #middle aside#sub-nav {
-  margin-bottom: 5px;
-}
-.middle-wrap #middle aside#sub-nav li {
-  list-style-type: none;
 }
 .middle-wrap #middle #main {
   /* #content styling */
-  /* aside styling */
 }
 .middle-wrap #middle #main #content .post {
   margin-bottom: 20px;
   border-bottom: 2px dashed #7d7774;
+  color: #635e5b;
 }
 .middle-wrap #middle #main #content .post .post-meta {
   font-size: .8em;
@@ -232,31 +216,33 @@ nav#main-nav ul li a:focus {
   float: left;
   margin-right: 5px;
 }
-.middle-wrap #middle #main #content .comment {
-  padding-left: 5px;
-  border: 1px dotted #d3d0cf;
-  margin-bottom: 5px;
+/**** aside styles *****/
+aside {
+  color: #635e5b;
 }
-.middle-wrap #middle #main #content .comment p {
-  margin-left: 10px;
-}
-.middle-wrap #middle #main #content .comment .comment-meta {
-  font-size: .8em;
-  clear: both;
-  overflow: hidden;
-}
-.middle-wrap #middle #main #content .comment .comment-meta p {
-  float: left;
-  margin-right: 5px;
-  margin-left: 0;
-}
-.middle-wrap #middle #main aside#categories {
-  margin-bottom: 5px;
-}
-.middle-wrap #middle #main aside#categories ul {
+aside .widget {
   margin-bottom: 10px;
 }
-.middle-wrap #middle #main aside#categories ul li {
+aside ul {
+  margin-bottom: 10px;
+}
+aside ul li {
+  margin-bottom: 5px;
+}
+/** sub nav styling **/
+aside#sub-nav {
+  margin-bottom: 5px;
+}
+aside#sub-nav li {
+  list-style-type: none;
+}
+aside#categories {
+  margin-bottom: 5px;
+}
+aside#categories ul {
+  margin-bottom: 10px;
+}
+aside#categories ul li {
   list-style-type: none;
 }
 /********* post styles *********/
@@ -274,6 +260,24 @@ input#submit {
   font-family: inherit;
   border: 1px dotted grey;
   background: none;
+}
+.comment {
+  padding-left: 5px;
+  border: 1px dotted #d3d0cf;
+  margin-bottom: 5px;
+}
+.comment p {
+  margin-left: 10px;
+}
+.comment .comment-meta {
+  font-size: .8em;
+  clear: both;
+  overflow: hidden;
+}
+.comment .comment-meta p {
+  float: left;
+  margin-right: 5px;
+  margin-left: 0;
 }
 /********* gallery styles ********/
 #gallery-content {
@@ -300,7 +304,6 @@ input#submit {
 }
 /************** typography styling ***************/
 p {
-  font-family: 'Arimo', sans-serif;
   color: #635e5b;
   margin-bottom: 5px;
 }
@@ -312,7 +315,7 @@ a:visited {
 a:hover,
 a:focus {
   color: #f5a561;
-  text-decoration: underline;
+  border-bottom: 1px solid #f5a561;
 }
 h1,
 h2,
@@ -343,15 +346,17 @@ aside h3 {
   border-bottom: 2px dashed #7d7774;
 }
 li {
-  font-family: 'Arvo', serif;
   color: #635e5b;
 }
 nav li {
   font-size: 1.2em;
 }
-#content ol,
+#content ol {
+  padding-left: 1.25em;
+  margin-bottom: 5px;
+}
 #content ul {
-  padding-left: 20px;
+  padding-left: 1.75em;
   margin-bottom: 5px;
 }
 blockquote {
@@ -363,19 +368,13 @@ blockquote {
 blockquote p {
   color: #857f7b;
 }
-blockquote:after {
-  bottom: 0px;
-  right: 10px;
-  content: "”";
-  position: absolute;
-  color: #857f7b;
-}
 blockquote:before {
   top: 0px;
-  left: 10px;
+  left: -10px;
   content: "“";
   position: absolute;
   color: #857f7b;
+  font-size: 2.25em;
 }
 input[type="text"] {
   border: 1px dotted #7d7774;

@@ -23,7 +23,7 @@ a img {
 /********** Global styles ***********/
 
 body {
-  font-family: sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 100%;
   line-height: 1.5;
 }
@@ -82,7 +82,7 @@ nav#main-nav {
         display: block;
         &:hover, &:focus {
           color: #f2913d;
-          text-decoration: none;
+          border-bottom: none;
           background: tint(#f2913d, 75%);
         }
       }
@@ -101,7 +101,35 @@ nav#main-nav {
     margin: 0 auto;
     overflow: hidden;
     
-    aside {
+    /** #main styling **/
+    #main {
+      /* #content styling */
+      #content {
+        .post {
+          margin-bottom: 20px;
+          border-bottom: 2px dashed #7d7774;
+          color: darken(#7d7774, 10%);
+          .post-meta {
+            font-size: .8em;
+            clear: both;
+            overflow: hidden;
+            p {
+              float: left;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+/**** aside styles *****/
+
+aside {
+      // for text not wrapped in p tags
+      color: darken(#7d7774, 10%);
       .widget {
         margin-bottom: 10px;
       }
@@ -120,58 +148,16 @@ nav#main-nav {
         list-style-type: none;
       }
     }
-    
-    /** #main styling **/
-    #main {
-      /* #content styling */
-      #content {
-        .post {
-          margin-bottom: 20px;
-          border-bottom: 2px dashed #7d7774;
-          .post-meta {
-            font-size: .8em;
-            clear: both;
-            overflow: hidden;
-            p {
-              float: left;
-              margin-right: 5px;
-            }
-          }
-        }
-        .comment {
-          padding-left: 5px;
-          border: 1px dotted #d3d0cf;
-          margin-bottom: 5px;
-          p {
-            margin-left: 10px;
-          }
-          .comment-meta {
-              font-size: .8em;
-              clear: both;
-              overflow: hidden;
-              p {
-                float: left;
-                margin-right: 5px;
-                margin-left: 0;
-              }
-            }
-        }
-      }
-      
-      /* aside styling */
-      aside#categories {
-        margin-bottom: 5px;
-        ul {
-          margin-bottom: 10px;
-          li {
-            list-style-type: none;
-          }
-        }
+
+  aside#categories {
+    margin-bottom: 5px;
+    ul {
+      margin-bottom: 10px;
+      li {
+        list-style-type: none;
       }
     }
-    
   }
-}
 
 /********* post styles *********/
 
@@ -192,6 +178,25 @@ input#submit {
   font-family: inherit;
   border: 1px dotted grey;
   background: none;
+}
+
+.comment {
+  padding-left: 5px;
+  border: 1px dotted #d3d0cf;
+  margin-bottom: 5px;
+  p {
+    margin-left: 10px;
+  }
+  .comment-meta {
+    font-size: .8em;
+    clear: both;
+    overflow: hidden;
+    p {
+      float: left;
+      margin-right: 5px;
+      margin-left: 0;
+    }
+  }
 }
 
 /********* gallery styles ********/
@@ -223,7 +228,6 @@ input#submit {
 /************** typography styling ***************/
 
 p {
-  font-family: 'Arimo', sans-serif;
   color: darken(#7d7774, 10%);
   margin-bottom: 5px;
 }
@@ -235,7 +239,7 @@ a:link, a:visited {
 
 a:hover, a:focus {
   color: #f5a561;
-  text-decoration: underline;
+  border-bottom: 1px solid #f5a561;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -261,7 +265,6 @@ aside h3 {
 }
 
 li {
-  font-family: 'Arvo', serif;
   color: darken(#7d7774, 10%);
 }
 
@@ -269,8 +272,13 @@ nav li {
   font-size: 1.2em;
 }
 
-#content ol, #content ul {
-  padding-left: 20px;
+#content ol {
+  padding-left: 1.25em;
+  margin-bottom: 5px;
+}
+
+#content ul {
+  padding-left: 1.75em;
   margin-bottom: 5px;
 }
 
@@ -282,20 +290,14 @@ blockquote {
   p {
     color: lighten(#7d7774, 3%);
   }
-  &:after {
-    bottom: 0px;
-    right: 10px;
-    content: "”";
-    position: absolute;
-    color: lighten(#7d7774, 3%);
-  }
   
   &:before {
     top: 0px;
-    left: 10px;
+    left: -10px;
     content: "“";
     position: absolute;
     color: lighten(#7d7774, 3%);
+    font-size: 2.25em;
   }
 }
 

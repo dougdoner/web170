@@ -12,7 +12,7 @@
                 <div class="post-meta">
                   <p>Posted on <?php the_date(); ?> by <?php the_author_posts_link(); ?> | Categories: <?php the_category(", "); ?></p>
                 </div><!-- end .post-meta -->
-              <?php the_excerpt(); ?>
+              <?php the_content(); ?>
               </div><!-- end .post -->
             <?php endwhile; ?>
         <div class="pagination">
