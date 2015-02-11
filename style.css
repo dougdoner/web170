@@ -9,7 +9,7 @@ Version: 0.1
   width: 6.38297872%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-1 {
     width: 100%;
   }
@@ -18,7 +18,7 @@ Version: 0.1
   width: 14.89361702%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-2 {
     width: 100%;
   }
@@ -27,7 +27,7 @@ Version: 0.1
   width: 23.40425532%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-3 {
     width: 100%;
   }
@@ -36,7 +36,7 @@ Version: 0.1
   width: 31.91489362%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-4 {
     width: 100%;
   }
@@ -45,7 +45,7 @@ Version: 0.1
   width: 40.42553191%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-5 {
     width: 100%;
   }
@@ -54,7 +54,7 @@ Version: 0.1
   width: 48.93617021%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-6 {
     width: 100%;
   }
@@ -63,7 +63,7 @@ Version: 0.1
   width: 57.44680851%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-7 {
     width: 100%;
   }
@@ -72,7 +72,7 @@ Version: 0.1
   width: 65.95744681%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-8 {
     width: 100%;
   }
@@ -81,7 +81,7 @@ Version: 0.1
   width: 74.46808511%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-9 {
     width: 100%;
   }
@@ -90,7 +90,7 @@ Version: 0.1
   width: 82.9787234%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-10 {
     width: 100%;
   }
@@ -99,7 +99,7 @@ Version: 0.1
   width: 91.4893617%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-11 {
     width: 100%;
   }
@@ -108,7 +108,7 @@ Version: 0.1
   width: 100%;
   padding-right: 0%;
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .columns-12 {
     width: 100%;
   }
@@ -141,7 +141,7 @@ img {
   margin: 0 auto;
 }
 .header-wrap #header-main img.header-logo {
-  max-width: 250px;
+  max-width: 200px;
   display: block;
   margin: 0 auto;
   padding-top: 10px;
@@ -402,7 +402,7 @@ hr {
 }
 /*************** media query styles **********************/
 /*********** tablet *************/
-@media all and (min-width: 480px) {
+@media all and (min-width: 600px) {
   /********* header styles ***********/
   #header-main {
     max-width: 940px;
@@ -455,7 +455,7 @@ hr {
   nav#main-nav ul li {
     float: left;
     vertical-align: middle;
-    line-height: 117px;
+    line-height: 100px;
     border: 0;
   }
   nav#main-nav ul li a {
